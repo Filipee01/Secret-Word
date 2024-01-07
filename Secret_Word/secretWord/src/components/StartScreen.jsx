@@ -1,6 +1,6 @@
-import './StartScreen.css'
+import './startScreen.css'
 
-const StartScreen = () => {
+const startScreen = () => {
   return (
     <div className='start'>
         <h1>Secret Word</h1>
@@ -10,4 +10,4 @@ const StartScreen = () => {
   )
 }
 
-export default StartScreen
+export default startScreen
