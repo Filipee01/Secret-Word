@@ -41,6 +41,7 @@ function App() {
     {gameStage === "start" && <StartScreen startGame = {startGame}/>}
     {gameStage === "game" && <Game verifyLetter = {verifyLetter} /> }
     {gameStage === "end" && <GameOver retry = {retry} />}
+      <h1>Opa</h1>
    </div>
   )
 }
