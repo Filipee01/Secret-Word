@@ -35,13 +35,21 @@ function App() {
     setGameStage(stages[0].name)
   }
 
+  const [guessedLetters, setGuessedLetters] = useState([])
+  const [wrongLetters, setWrongLetters] = useState([])
+  const [guesses, setGuesses] = useState()
+  const [score, setScore] = useState(0)
 
   return (
    <div className="App">
     {gameStage === "start" && <StartScreen startGame = {startGame}/>}
-    {gameStage === "game" && <Game verifyLetter = {verifyLetter} /> }
+    {gameStage === "game" && <Game verifyLetter = {verifyLetter} pickedWord = {pickedWord}
+    pickedCategory = {pickedCategory} letters = {letters} guessedLetters = {guessedLetters}
+    wrongLetters = {wrongLetters}
+    guesses = {guesses}
+    score = {score}
+    /> }
     {gameStage === "end" && <GameOver retry = {retry} />}
-      <h1>Opa</h1>
    </div>
   )
 }
